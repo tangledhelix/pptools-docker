@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pptools:
+    image: pptools
+    build: ./pptools
+    ports:
+      - 127.0.0.1:5000:5000
+    volumes:
+      - /pptools/wsgi/projects
